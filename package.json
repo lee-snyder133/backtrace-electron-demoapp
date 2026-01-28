@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My Backtrace Test App",
   "main": "main.js",
-  "author": "Lee Snyder",
+  "author": "Your Name",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
@@ -21,17 +21,14 @@
     "appId": "com.backtrace.testapp",
     "productName": "Backtrace Reporter",
     "files": [
-      "**/*",
-      "btBot.png"
+      "**/*"
     ],
     "mac": {
       "target": "dmg",
-      "icon": "btBot.png",
       "category": "public.app-category.developer-tools"
     },
     "win": {
-      "target": "nsis",
-      "icon": "btBot.png"
+      "target": "nsis"
     }
   }
 }
