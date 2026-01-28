@@ -1,0 +1,37 @@
+{
+  "name": "backtrace-electron-app",
+  "version": "1.0.0",
+  "description": "My Backtrace Test App",
+  "main": "main.js",
+  "author": "Lee Snyder",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "@backtrace/browser": "^0.6.0",
+    "@backtrace/electron": "^0.7.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.backtrace.testapp",
+    "productName": "Backtrace Reporter",
+    "files": [
+      "**/*",
+      "btBot.png"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "btBot.png",
+      "category": "public.app-category.developer-tools"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "btBot.png"
+    }
+  }
+}
